@@ -1,232 +1,253 @@
 .hide-me {
-	display: none !important;
+  display: none !important;
 }
 
 .wctrn26-form-field-description {
-	margin-top: -10px;
+  margin-top: -10px;
 }
 
 header .wp-block-navigation__container .pillola {
-	background-color: #1d1d1d;
-	color: var(--wp--preset--color--base);
-	border-radius: 1.5em;
-	padding: .15em .9em;
+  background-color: #1d1d1d;
+  color: var(--wp--preset--color--base);
+  border-radius: 1.5em;
+  padding: 0.15em 0.9em;
 }
 
 header .wp-block-navigation__container .pillola a {
-	color: var(--wp--preset--color--base);
+  color: var(--wp--preset--color--base);
 }
 
 @media screen and (max-width: 765px) {
-	header .wp-block-site-logo img.custom-logo {
-		max-width: 85%;
-	}
+  header .wp-block-site-logo img.custom-logo {
+    max-width: 85%;
+  }
 }
 
 /** Form biglietti **/
 #tix table {
-	border-collapse: collapse;
-	border-radius: var(--wp--preset--spacing--20);
-	overflow: hidden;
-	border: 1px solid var(--wp--preset--color--base-2);
-	margin: var(--wp--preset--spacing--20) 0;
+  border-collapse: collapse;
+  border-radius: var(--wp--preset--spacing--20);
+  overflow: hidden;
+  border: 1px solid var(--wp--preset--color--base-2);
+  margin: var(--wp--preset--spacing--20) 0;
 }
 
 #tix tbody {
-	background-color: #ffffff;
+  background-color: var(--wp--preset--color--base);
 }
 
 #tix thead {
-	background-color: var(--wp--preset--color--base-2);
-	color: #ffffff;
+  background-color: var(--wp--preset--color--base-2);
+  color: #ffffff;
 }
 
 #tix .tix-column-description {
-	text-align: left;
+  text-align: left;
 }
 
 #tix tr {
-	border-bottom: 1px solid var(--wp--preset--color--base-2);
+  border-bottom: 1px solid var(--wp--preset--color--base-2);
 }
 
 #tix th,
 #tix td {
-	padding: 1rem .75rem;
+  padding: 1rem 0.75rem;
 }
 
 #tix .tix-column-price,
 #tix .tix-column-quantity {
-	min-width: 80px;
+  min-width: 80px;
 }
 
 #tix .tix-column-remaining {
-	min-width: 88px;
+  min-width: 88px;
 }
 
 #tix input[type="text"],
 #tix input[type="email"] {
-	border: 1px solid var(--wp--preset--color--base);
-	border-radius: 3px;
-	font-size: 1rem;
-	line-height: 1.1;
-	padding: .5rem;
+  border: 1px solid var(--wp--preset--color--base);
+  border-radius: 3px;
+  font-size: 1rem;
+  line-height: 1.1;
+  padding: 0.5rem;
 }
 
 #tix input[type="submit"],
 #tix input.tix-checkout-button[type="submit"] {
-	color: #ffffff;
-	font-size: var(--wp--preset--font-size--large);
-	font-weight: 700;
-	font-family: var(--wp--preset--font-family--bricolage-grotesque);
-	background-color: var(--wp--preset--color--base-2);
-	border: none;
-	border-radius: var(--wp--preset--spacing--40);
-	padding: var(--wp--preset--spacing--20) var(--wp--preset--spacing--30);
+  color: #ffffff;
+  font-size: var(--wp--preset--font-size--large);
+  font-weight: 700;
+  font-family: var(--wp--preset--font-family--bricolage-grotesque);
+  background-color: var(--wp--preset--color--base-2);
+  border: none;
+  border-radius: var(--wp--preset--spacing--40);
+  padding: var(--wp--preset--spacing--20) var(--wp--preset--spacing--30);
 }
 
 select {
-	width: auto;
-	padding: 5px 35px 5px 5px;
-	font-size: 16px;
-	border: none;
-	height: 34px;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	background-color: var(--wp--preset--color--base-2);
-	color: #ffffff;
+  width: auto;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: none;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--wp--preset--color--base-2);
+}
+
+select {
+  background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="white"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 18px;
 }
 
 /* Nascondiamo i biglietti riservati del Contributor Day */
 .tix-ticket-952.tix-sold-out {
-	display: none;
+  display: none;
 }
 
 #tix #tix-coupon-container input[type="submit"] {
-	font-size: 1rem;
-	padding: 1rem;
-	margin-left: 1rem;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-left: 1rem;
 }
 
 #tix #tix-payment-options-list fieldset {
-	border: 2px solid var(--wp--preset--color--base-2);
-	border-radius: var(--wp--preset--spacing--10);
+  border: 2px solid var(--wp--preset--color--base-2);
+  border-radius: var(--wp--preset--spacing--10);
 }
 
 /* CAUTION: Internet Explorer hackery ahead */
 select::-ms-expand {
-	display: none;
-/* Remove default arrow in Internet Explorer 10 and 11 */
+  display: none;
+  /* Remove default arrow in Internet Explorer 10 and 11 */
 }
 
 /* Target Internet Explorer 9 to undo the custom arrow */
-@media screen and (min-width:0\0) {
-	select {
-		background: none\9;
-		padding: 5px\9;
-	}
+@media screen and (min-width: 0\0) {
+  select {
+    background: none\9;
+    padding: 5px\9;
+  }
 }
 
 /* Pagina degli attendee/sponsor */
 #tix-attendees ul.tix-attendee-list li {
-	width: 29%;
-	margin: 1%;
-	padding: .5rem;
-	background-color: #ffffff;
-	border-radius: 1rem;
-	display: flex;
-	flex-flow: row wrap;
-	overflow: hidden;
-	height: auto;
+  width: 29%;
+  margin: 1%;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+  height: auto;
 }
 
 #tix-attendees ul.tix-attendee-list li .avatar {
-	height: 60px;
-	width: 60px;
-	margin-top: -.5rem;
-	margin-left: -.5rem;
-	border-bottom-right-radius: 6px;
+  height: 60px;
+  width: 60px;
+  margin-top: -0.5rem;
+  margin-left: -0.5rem;
+  border-bottom-right-radius: 6px;
 }
 
 #tix-attendees .tix-attendee-name {
-	font-weight: 800;
-	margin-top: -54px;
+  font-weight: 800;
+  margin-top: -54px;
 }
 
 #tix-attendees .tix-nome-azienda {
-	font-style: italic;
+  font-style: italic;
 }
 
 /* Hide title in sponsor page */
 body.single-wcb_sponsor .wp-block-post-title {
-	display: none;
+  display: none;
 }
-
 
 /* Fix tabella prezzi su mobile */
 @media screen and (max-width: 765px) {
-	#tix table {
-		width: auto;
-	}
-	
-	#tix tr {
-		display: inline-flex;
-		flex-flow: column;
-	}
+  #tix table {
+    width: auto;
+  }
+
+  #tix tr {
+    display: inline-flex;
+    flex-flow: column;
+  }
 }
 
 /* Hide regular ticket, copper ticket, and coupon row  */
-table.tix_tickets_table.tix-tickets-list tbody:has(.tix-ticket-952:not(.tix-sold-out)) .tix-ticket-910, 
-table.tix_tickets_table.tix-tickets-list tbody:has(.tix-ticket-952:not(.tix-sold-out)) .tix-ticket-807,
-table.tix_tickets_table.tix-tickets-list tbody:has(.tix-ticket-952:not(.tix-sold-out)) .tix-row-coupon {
-	display: none;
+table.tix_tickets_table.tix-tickets-list
+  tbody:has(.tix-ticket-952:not(.tix-sold-out))
+  .tix-ticket-910,
+table.tix_tickets_table.tix-tickets-list
+  tbody:has(.tix-ticket-952:not(.tix-sold-out))
+  .tix-ticket-807,
+table.tix_tickets_table.tix-tickets-list
+  tbody:has(.tix-ticket-952:not(.tix-sold-out))
+  .tix-row-coupon {
+  display: none;
 }
 
 /* Expand tickets table */
-table.tix_tickets_table.tix-tickets-list:has(.tix-ticket-952:not(.tix-sold-out)) {
-	width: 100%;
+table.tix_tickets_table.tix-tickets-list:has(
+    .tix-ticket-952:not(.tix-sold-out)
+  ) {
+  width: 100%;
 }
 
 /* Cheat to prevent CD overbooking */
-#tix-qty-952 option:is([value="2"], [value="3"], [value="4"], [value="5"], [value="6"], [value="7"], [value="8"], [value="9"], [value="10"]) {
-	display: none;
+#tix-qty-952
+  option:is(
+    [value="2"],
+    [value="3"],
+    [value="4"],
+    [value="5"],
+    [value="6"],
+    [value="7"],
+    [value="8"],
+    [value="9"],
+    [value="10"]
+  ) {
+  display: none;
 }
-
-
-
 
 /* rendo i blocchi Cover in home page linkabili */
 .wp-block-cover.full-link-cover {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .wp-block-cover.full-link-cover {
-	position: relative;
+  position: relative;
 }
 .wp-block-cover.full-link-cover .wp-block-cover__inner-container {
-	position: static;
+  position: static;
 }
 
 .wp-block-cover.full-link-cover .wp-block-cover__inner-container a {
-	font-size: var(--wp--preset--font-size--large);
-	text-decoration: none;
+  font-size: var(--wp--preset--font-size--large);
+  text-decoration: none;
 }
 
 .wp-block-cover.full-link-cover .wp-block-cover__inner-container a::before {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
 }
 
 .wp-block-cover.full-link-cover:hover {
-	border-color: var(--wp--preset--color--contrast-3);	
+  border-color: var(--wp--preset--color--contrast-3);
 }
 
 .wp-block-cover.full-link-cover .wp-block-cover__image-background {
-	z-index: -1; /* con l'elemento padre in position static lo z-index del contenuto si perde, lo correggo arretrando l'immagine di un livello */
+  z-index: -1; /* con l'elemento padre in position static lo z-index del contenuto si perde, lo correggo arretrando l'immagine di un livello */
 }
 
 /* Rendo più "importante" il separatore degli articoli nel blocco Query */
