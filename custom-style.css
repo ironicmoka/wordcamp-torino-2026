@@ -175,6 +175,25 @@ body.single-wcb_sponsor .wp-block-post-title {
 	}
 }
 
+/* Hide regular ticket, copper ticket, and coupon row  */
+table.tix_tickets_table.tix-tickets-list tbody:has(.tix-ticket-952:not(.tix-sold-out)) .tix-ticket-910, 
+table.tix_tickets_table.tix-tickets-list tbody:has(.tix-ticket-952:not(.tix-sold-out)) .tix-ticket-807,
+table.tix_tickets_table.tix-tickets-list tbody:has(.tix-ticket-952:not(.tix-sold-out)) .tix-row-coupon {
+	display: none;
+}
+
+/* Expand tickets table */
+table.tix_tickets_table.tix-tickets-list:has(.tix-ticket-952:not(.tix-sold-out)) {
+	width: 100%;
+}
+
+/* Cheat to prevent CD overbooking */
+#tix-qty-952 option:is([value="2"], [value="3"], [value="4"], [value="5"], [value="6"], [value="7"], [value="8"], [value="9"], [value="10"]) {
+	display: none;
+}
+
+
+
 
 /* rendo i blocchi Cover in home page linkabili */
 .wp-block-cover.full-link-cover {
@@ -208,4 +227,9 @@ body.single-wcb_sponsor .wp-block-post-title {
 
 .wp-block-cover.full-link-cover .wp-block-cover__image-background {
 	z-index: -1; /* con l'elemento padre in position static lo z-index del contenuto si perde, lo correggo arretrando l'immagine di un livello */
+}
+
+/* Rendo più "importante" il separatore degli articoli nel blocco Query */
+.wp-block-query .wp-block-separator {
+  border-width: 0 0 4px 0;
 }
