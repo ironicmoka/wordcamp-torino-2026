@@ -84,17 +84,17 @@ header .wp-block-navigation__container .pillola a {
   padding: var(--wp--preset--spacing--20) var(--wp--preset--spacing--30);
 }
 
-select {
-  width: auto;
-  padding: 5px 35px 5px 5px;
-  font-size: 16px;
-  border: none;
-  height: 34px;
+.tix_tickets_table select {
+	width: auto;
+	padding: 5px 35px 5px 5px;
+	font-size: 16px;
+	border: none;
+	height: 34px;
 }
 
 /* Nascondiamo i biglietti riservati del Contributor Day */
 .tix-ticket-952.tix-sold-out {
-  display: none;
+  display: none!important;
 }
 
 #tix #tix-coupon-container input[type="submit"] {
@@ -110,7 +110,7 @@ select {
 
 /* CAUTION: Internet Explorer hackery ahead */
 select::-ms-expand {
-  display: none;
+  display: none!important;
   /* Remove default arrow in Internet Explorer 10 and 11 */
 }
 
@@ -180,7 +180,7 @@ table.tix_tickets_table.tix-tickets-list
 table.tix_tickets_table.tix-tickets-list
   tbody:has(.tix-ticket-952:not(.tix-sold-out))
   .tix-row-coupon {
-  display: none;
+  display: none!important;
 }
 
 /* Expand tickets table */
@@ -203,7 +203,7 @@ table.tix_tickets_table.tix-tickets-list:has(
     [value="9"],
     [value="10"]
   ) {
-  display: none;
+  display: none!important;
 }
 
 /* rendo i blocchi Cover in home page linkabili */
