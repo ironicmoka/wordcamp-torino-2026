@@ -134,31 +134,32 @@ select::-ms-expand {
 	height: auto;
 }
 
-@media screen and (min-width: 766px) and (max-width: 1080px) { 
-    #tix-attendees ul.tix-attendee-list {
-        max-width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-    }
-    #tix-attendees ul.tix-attendee-list li {
-        width: 45%;
-        max-width: 100%!important;
-        margin: auto;
-    }
-} 
-    
-@media screen and (max-width: 765px) { 
-    #tix-attendees ul.tix-attendee-list {
-        padding: 0;
-        display: flex;
-        flex-flow: column;
-    }
-    #tix-attendees ul.tix-attendee-list li {
-        width: 94%;
-        max-width: 100%!important;
-        margin: 1% auto;
-    }
+@media screen and (min-width: 766px) and (max-width: 1080px) {
+	#tix-attendees ul.tix-attendee-list {
+		max-width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+	}
+	
+	#tix-attendees ul.tix-attendee-list li {
+		width: 45%!important;
+		max-width: 100% !important;
+		margin: .3rem auto;
+	}
+}
+
+@media screen and (max-width: 765px) {
+	#tix-attendees ul.tix-attendee-list {
+		padding: 0;
+		display: flex;
+		flex-flow: column;
+	}
+	
+	#tix-attendees ul.tix-attendee-list li {
+		width: 94%!important;
+		max-width: 100% !important;
+	}
 }
 
 #tix-attendees ul.tix-attendee-list li .avatar {
@@ -290,8 +291,8 @@ table.tix_tickets_table.tix-tickets-list:has(
 
 @media screen and (max-width: 765px) {
 	.page-id-11 li.post-30 a:before,
-		.page-id-11 li.post-1071 a:before,
-		.single-wcb_sponsor .wp-block-post-featured-image:before {
+			.page-id-11 li.post-1071 a:before,
+			.single-wcb_sponsor .wp-block-post-featured-image:before {
 		transform: scale(0.4);
 		transform-origin: top right;
 	}
