@@ -299,3 +299,40 @@ table.tix_tickets_table.tix-tickets-list:has(
     transform-origin: top right;
   }
 }
+
+
+/* Evidenzia la riga del biglietto */
+.tix-ticket-form tbody tr {
+position: relative;
+background: #F0FDF4; /* verde molto chiaro */
+border-left: 6px solid #16A34A;
+}
+
+/* Trasforma lo stato in badge */
+.tix-ticket-form tbody tr td:last-child {
+font-weight: 600;
+}
+
+/* Nascondiamo il testo originale “Stato: confermato” */
+.tix-ticket-form tbody tr td:last-child br {
+display: none;
+}
+
+/* Badge verde con check */
+.tix-ticket-form tbody tr td:last-child::before {
+content: “:heavy_check_mark: Hai acquistato correttamente il biglietto.“;
+display: inline-block;
+background: #16A34A;
+color: white;
+padding: 8px 14px;
+border-radius: 999px;
+font-size: 14px;
+margin-bottom: 8px;
+}
+
+/* Rendi il link meno dominante */
+.tix-ticket-form tbody tr td:last-child a {
+display: inline-block;
+margin-top: 6px;
+font-size: 14px;
+}
