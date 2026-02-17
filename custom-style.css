@@ -1,87 +1,87 @@
 .hide-me {
-  display: none !important;
+	display: none !important;
 }
 
 .wctrn26-form-field-description {
-  margin-top: -10px;
+	margin-top: -10px;
 }
 
 header .wp-block-navigation__container .pillola {
-  background-color: #1d1d1d;
-  color: var(--wp--preset--color--base);
-  border-radius: 1.5em;
-  padding: 0.15em 0.9em;
+	background-color: #1d1d1d;
+	color: var(--wp--preset--color--base);
+	border-radius: 1.5em;
+	padding: .15em .9em;
 }
 
 header .wp-block-navigation__container .pillola a {
-  color: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--base);
 }
 
 @media screen and (max-width: 765px) {
-  header .wp-block-site-logo img.custom-logo {
-    max-width: 85%;
-  }
+	header .wp-block-site-logo img.custom-logo {
+		max-width: 85%;
+	}
 }
 
 /** Form biglietti **/
 #tix table {
-  border-collapse: collapse;
-  border-radius: var(--wp--preset--spacing--20);
-  overflow: hidden;
-  border: 1px solid var(--wp--preset--color--base-2);
-  margin: var(--wp--preset--spacing--20) 0;
+	border-collapse: collapse;
+	border-radius: var(--wp--preset--spacing--20);
+	overflow: hidden;
+	border: 1px solid var(--wp--preset--color--base-2);
+	margin: var(--wp--preset--spacing--20) 0;
 }
 
 #tix tbody {
-  background-color: var(--wp--preset--color--base);
+	background-color: var(--wp--preset--color--base);
 }
 
 #tix thead {
-  background-color: var(--wp--preset--color--base-2);
-  color: #ffffff;
+	background-color: var(--wp--preset--color--base-2);
+	color: #ffffff;
 }
 
 #tix .tix-column-description {
-  text-align: left;
+	text-align: left;
 }
 
 #tix tr {
-  border-bottom: 1px solid var(--wp--preset--color--base-2);
+	border-bottom: 1px solid var(--wp--preset--color--base-2);
 }
 
 #tix th,
 #tix td {
-  padding: 1rem 0.75rem;
+	padding: 1rem .75rem;
 }
 
 #tix .tix-column-price,
 #tix .tix-column-quantity {
-  min-width: 80px;
+	min-width: 80px;
 }
 
 #tix .tix-column-remaining {
-  min-width: 88px;
+	min-width: 88px;
 }
 
 #tix input[type="text"],
 #tix input[type="email"] {
-  border: 1px solid var(--wp--preset--color--base);
-  border-radius: 3px;
-  font-size: 1rem;
-  line-height: 1.1;
-  padding: 0.5rem;
+	border: 1px solid var(--wp--preset--color--base);
+	border-radius: 3px;
+	font-size: 1rem;
+	line-height: 1.1;
+	padding: .5rem;
 }
 
 #tix input[type="submit"],
 #tix input.tix-checkout-button[type="submit"] {
-  color: #ffffff;
-  font-size: var(--wp--preset--font-size--large);
-  font-weight: 700;
-  font-family: var(--wp--preset--font-family--bricolage-grotesque);
-  background-color: var(--wp--preset--color--base-2);
-  border: none;
-  border-radius: var(--wp--preset--spacing--40);
-  padding: var(--wp--preset--spacing--20) var(--wp--preset--spacing--30);
+	color: #ffffff;
+	font-size: var(--wp--preset--font-size--large);
+	font-weight: 700;
+	font-family: var(--wp--preset--font-family--bricolage-grotesque);
+	background-color: var(--wp--preset--color--base-2);
+	border: none;
+	border-radius: var(--wp--preset--spacing--40);
+	padding: var(--wp--preset--spacing--20) var(--wp--preset--spacing--30);
 }
 
 .tix_tickets_table select {
@@ -94,80 +94,104 @@ header .wp-block-navigation__container .pillola a {
 
 /* Nascondiamo i biglietti riservati del Contributor Day */
 .tix-ticket-952.tix-sold-out {
-  display: none!important;
+	display: none !important;
 }
 
 #tix #tix-coupon-container input[type="submit"] {
-  font-size: 1rem;
-  padding: 1rem;
-  margin-left: 1rem;
+	font-size: 1rem;
+	padding: 1rem;
+	margin-left: 1rem;
 }
 
 #tix #tix-payment-options-list fieldset {
-  border: 2px solid var(--wp--preset--color--base-2);
-  border-radius: var(--wp--preset--spacing--10);
+	border: 2px solid var(--wp--preset--color--base-2);
+	border-radius: var(--wp--preset--spacing--10);
 }
 
 /* CAUTION: Internet Explorer hackery ahead */
 select::-ms-expand {
-  display: none!important;
-  /* Remove default arrow in Internet Explorer 10 and 11 */
+	display: none !important;
+/* Remove default arrow in Internet Explorer 10 and 11 */
 }
 
 /* Target Internet Explorer 9 to undo the custom arrow */
 @media screen and (min-width: 0\0) {
-  select {
-    background: none\9;
-    padding: 5px\9;
-  }
+	select {
+		background: none\9;
+		padding: 5px\9;
+	}
 }
 
 /* Pagina degli attendee/sponsor */
-
 #tix-attendees ul.tix-attendee-list li {
-    width: 28%;
-    margin: 1%;
-    padding: 0.5rem;
-    background-color: #ffffff;
-    border-radius: 1rem;
-    border: 1px solid var(--wp--preset--color--base);
-    overflow: hidden;
-    height: auto;
+	width: 28%;
+	margin: 1%;
+	padding: .5rem;
+	background-color: #ffffff;
+	border-radius: 1rem;
+	border: 1px solid var(--wp--preset--color--base);
+	overflow: hidden;
+	height: auto;
+}
 
+@media screen and (min-width: 766px) and (max-width: 1080px) { 
+    #tix-attendees ul.tix-attendee-list {
+        max-width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    #tix-attendees ul.tix-attendee-list li {
+        width: 45%;
+        max-width: 100%!important;
+        margin: auto;
+    }
+} 
+    
+@media screen and (max-width: 765px) { 
+    #tix-attendees ul.tix-attendee-list {
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+    }
+    #tix-attendees ul.tix-attendee-list li {
+        width: 94%;
+        max-width: 100%!important;
+        margin: 1% auto;
+    }
 }
 
 #tix-attendees ul.tix-attendee-list li .avatar {
-  height: 60px;
-  width: 60px;
-  margin-top: -0.5rem;
-  margin-left: -0.5rem;
-  border-bottom-right-radius: 6px;
+	height: 60px;
+	width: 60px;
+	margin-top: -.5rem;
+	margin-left: -.5rem;
+	border-bottom-right-radius: 6px;
 }
 
 #tix-attendees .tix-attendee-name {
-  font-weight: 800;
+	font-weight: 800;
 }
 
-
 #tix-attendees .tix-nome-azienda {
-  font-style: italic;
+	font-style: italic;
 }
 
 /* Hide title in sponsor page */
 body.single-wcb_sponsor .wp-block-post-title {
-  display: none;
+	display: none;
 }
 
 /* Fix tabella prezzi su mobile */
 @media screen and (max-width: 765px) {
-  #tix table {
-    width: auto;
-  }
-
-  #tix tr {
-    display: inline-flex;
-    flex-flow: column;
-  }
+	#tix table {
+		width: auto;
+	}
+	
+	#tix tr {
+		display: inline-flex;
+		flex-flow: column;
+	}
 }
 
 /* Hide regular ticket, copper ticket, and coupon row  */
@@ -180,14 +204,14 @@ table.tix_tickets_table.tix-tickets-list
 table.tix_tickets_table.tix-tickets-list
   tbody:has(.tix-ticket-952:not(.tix-sold-out))
   .tix-row-coupon {
-  display: none!important;
+	display: none !important;
 }
 
 /* Expand tickets table */
 table.tix_tickets_table.tix-tickets-list:has(
     .tix-ticket-952:not(.tix-sold-out)
   ) {
-  width: 100%;
+	width: 100%;
 }
 
 /* Cheat to prevent CD overbooking */
@@ -203,48 +227,49 @@ table.tix_tickets_table.tix-tickets-list:has(
     [value="9"],
     [value="10"]
   ) {
-  display: none!important;
+	display: none !important;
 }
 
 /* rendo i blocchi Cover in home page linkabili */
 .wp-block-cover.full-link-cover {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .wp-block-cover.full-link-cover {
-  position: relative;
+	position: relative;
 }
+
 .wp-block-cover.full-link-cover .wp-block-cover__inner-container {
-  position: static;
+	position: static;
 }
 
 .wp-block-cover.full-link-cover .wp-block-cover__inner-container a {
-  font-size: var(--wp--preset--font-size--large);
-  text-decoration: none;
+	font-size: var(--wp--preset--font-size--large);
+	text-decoration: none;
 }
 
 .wp-block-cover.full-link-cover .wp-block-cover__inner-container a::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
 }
 
 .wp-block-cover.full-link-cover:hover {
-  border-color: var(--wp--preset--color--contrast-3);
+	border-color: var(--wp--preset--color--contrast-3);
 }
 
 .wp-block-cover.full-link-cover .wp-block-cover__image-background {
-  z-index: -1; /* con l'elemento padre in position static lo z-index del contenuto si perde, lo correggo arretrando l'immagine di un livello */
+	z-index: -1;
+/* con l'elemento padre in position static lo z-index del contenuto si perde, lo correggo arretrando l'immagine di un livello */
 }
 
 /* Rendo più "importante" il separatore degli articoli nel blocco Query */
 .wp-block-query .wp-block-separator {
-  border-width: 0 0 4px 0;
+	border-width: 0 0 4px;
 }
-
 
 /* Add white background and border to sponsor page logo */
 .single-wcb_sponsor .wp-block-post-featured-image img {
@@ -257,15 +282,16 @@ table.tix_tickets_table.tix-tickets-list:has(
 .page-id-11 li.post-30 a:before,
 .page-id-11 li.post-1071 a:before,
 .single-wcb_sponsor .wp-block-post-featured-image:before {
-	content: url("https://torino.wordcamp.org/2026/files/2026/02/global.png");
+	content: url('https://torino.wordcamp.org/2026/files/2026/02/global.png');
 	display: block;
 	position: absolute;
 	right: 6px;
 }
+
 @media screen and (max-width: 765px) {
 	.page-id-11 li.post-30 a:before,
-	.page-id-11 li.post-1071 a:before,
-	.single-wcb_sponsor .wp-block-post-featured-image:before {
+		.page-id-11 li.post-1071 a:before,
+		.single-wcb_sponsor .wp-block-post-featured-image:before {
 		transform: scale(0.4);
 		transform-origin: top right;
 	}
