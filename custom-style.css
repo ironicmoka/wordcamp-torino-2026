@@ -244,3 +244,29 @@ table.tix_tickets_table.tix-tickets-list:has(
 .wp-block-query .wp-block-separator {
   border-width: 0 0 4px 0;
 }
+
+
+/* Add white background and border to sponsor page logo */
+.single-wcb_sponsor .wp-block-post-featured-image img {
+	border-radius: 20px;
+	background-color: #fff;
+	border: 1px #e6caa6 solid;
+}
+
+/* Add global ribbon to sponsor logo on dedicated page and listing */
+.page-id-11 li.post-30 a:before,
+.page-id-11 li.post-1071 a:before,
+.single-wcb_sponsor .wp-block-post-featured-image:before {
+	content: url("https://torino.wordcamp.org/2026/files/2026/02/global.png");
+	display: block;
+	position: absolute;
+	right: 6px;
+}
+@media screen and (max-width: 765px) {
+	.page-id-11 li.post-30 a:before,
+	.page-id-11 li.post-1071 a:before,
+	.single-wcb_sponsor .wp-block-post-featured-image:before {
+		transform: scale(0.4);
+		transform-origin: top right;
+	}
+}
