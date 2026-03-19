@@ -272,34 +272,47 @@ table.tix_tickets_table.tix-tickets-list:has(
   border-width: 0 0 4px;
 }
 
-/* Add white background and border to sponsor page logo */
-.single-wcb_sponsor .wp-block-post-featured-image img {
-  border-radius: 20px;
-  background-color: #fff;
-  border: 1px #e6caa6 solid;
+/**
+* Fix schema riassuntivo perks sponsorship
+*/
+
+/* Contenitore scroll mobile */
+.wcit-sponsrhip-levels-table {
+	overflow-x: auto;
 }
 
-/* Add global ribbon to sponsor logo on dedicated page and listing */
-.page-id-11 li.post-30 a:before,
-.page-id-11 li.post-1071 a:before,
-.postid-30.single-wcb_sponsor .wp-block-post-featured-image:before,
-.postid-1071.single-wcb_sponsor .wp-block-post-featured-image:before {
-  content: url("https://torino.wordcamp.org/2026/files/2026/02/global.png");
-  display: block;
-  position: absolute;
-  right: 6px;
+/* Tabella */
+.wcit-sponsrhip-levels-table table {
+	min-width: 700px;
+/* forza lo scroll */
+	border-collapse: collapse;
 }
 
-@media screen and (max-width: 765px) {
-  .page-id-11 li.post-30 a:before,
-  .page-id-11 li.post-1071 a:before,
-  .postid-30.single-wcb_sponsor .wp-block-post-featured-image:before,
-  .postid-1071.single-wcb_sponsor .wp-block-post-featured-image:before {
-    transform: scale(0.4);
-    transform-origin: top right;
-  }
+/* Celle */
+.wcit-sponsrhip-levels-table th,
+.wcit-sponsrhip-levels-table td {
+	min-width: 140px;
+	padding: 12px;
+	vertical-align: middle;
 }
 
+/* Prima colonna più larga */
+.wcit-sponsrhip-levels-table th:first-child,
+.wcit-sponsrhip-levels-table td:first-child {
+	min-width: 200px;
+	text-align: left;
+}
+
+/* Evita parole spezzate male */
+.wcit-sponsrhip-levels-table td,
+.wcit-sponsrhip-levels-table th {
+	word-break: normal;
+	white-space: normal;
+}
+
+/**
+* Fix sistema biglietti
+*/
 
 /* Evidenzia la riga del biglietto */
 .tix-ticket-form tbody tr {
@@ -336,3 +349,37 @@ display: inline-block;
 margin-top: 6px;
 font-size: 14px;
 }
+
+/**
+* Fix pagina Sponsor
+*/
+
+/* Add white background and border to sponsor page logo */
+.single-wcb_sponsor .wp-block-post-featured-image img {
+  border-radius: 20px;
+  background-color: #fff;
+  border: 1px #e6caa6 solid;
+}
+
+/* Add global ribbon to sponsor logo on dedicated page and listing */
+.page-id-11 li.post-30 a:before,
+.page-id-11 li.post-1071 a:before,
+.postid-30.single-wcb_sponsor .wp-block-post-featured-image:before,
+.postid-1071.single-wcb_sponsor .wp-block-post-featured-image:before {
+  content: url("https://torino.wordcamp.org/2026/files/2026/02/global.png");
+  display: block;
+  position: absolute;
+  right: 6px;
+}
+
+@media screen and (max-width: 765px) {
+  .page-id-11 li.post-30 a:before,
+  .page-id-11 li.post-1071 a:before,
+  .postid-30.single-wcb_sponsor .wp-block-post-featured-image:before,
+  .postid-1071.single-wcb_sponsor .wp-block-post-featured-image:before {
+    transform: scale(0.4);
+    transform-origin: top right;
+  }
+}
+
+
