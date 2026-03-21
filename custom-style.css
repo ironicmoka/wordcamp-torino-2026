@@ -390,3 +390,13 @@ font-size: 14px;
 .wordcamp-schedule > .wordcamp-schedule__date {
   display: none;
 }
+
+.wordcamp-schedule__day {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: var(--wp--preset--shadow--natural);
+}
+
+div[class*="has-slug-pausa"] {
+ background-color: #f1f1f1; 
+}
