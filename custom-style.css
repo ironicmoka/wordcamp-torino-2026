@@ -383,3 +383,10 @@ font-size: 14px;
 }
 
 
+/**
+* Programma
+*/
+
+.wordcamp-schedule > .wordcamp-schedule__date {
+  display: none;
+}
