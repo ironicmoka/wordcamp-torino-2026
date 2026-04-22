@@ -366,10 +366,11 @@ font-size: 14px;
 .page-id-11 li.post-1071 a:before,
 .postid-30.single-wcb_sponsor .wp-block-post-featured-image:before,
 .postid-1071.single-wcb_sponsor .wp-block-post-featured-image:before {
-  content: url("https://torino.wordcamp.org/2026/files/2026/02/global.png");
+  content: url("https://torino.wordcamp.org/2026/files/2026/04/WCTRN_Global_label-small.png");
   display: block;
   position: absolute;
-  right: 6px;
+  right: -12px;
+  top: -12px;
 }
 
 @media screen and (max-width: 765px) {
@@ -400,3 +401,12 @@ font-size: 14px;
 div[class*="has-slug-pausa"] {
  background-color: #f1f1f1; 
 }
+
+/**
+* Pagina Sessione
+*/
+
+.single-wcb_session .wp-block-wordcamp-session-speakers__name a {
+font-size: inherit;
+}
+
